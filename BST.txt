@@ -1,0 +1,32 @@
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary Search Tree'e ekleme aşamaları:
+
+Adım 1: Root düğüm: 7 (7)
+Adım 2: 5, 1, 8, 3, 6, 0, 9, 4, 2 sırasıyla eklenir.
+
+5 (7)
+1 (7) - sol referansa eklendi
+8 (7) - sağ referansa eklendi
+3 (7) - solun soluna eklendi
+6 (7) - solun sağına eklendi
+0 (7) - solun solunun soluna eklendi
+9 (7) - sağına eklendi
+4 (7) - solun sağından sola eklendi
+2 (7) - solun solunun sağına eklendi
+Son haliyle Binary Search Tree:
+
+          7
+       /      \
+      5        8
+    /   \        \
+   1     6        9
+    \      
+     3      
+      \
+       0    
+        \
+         4    
+          \
+           2    
+
+Dizi, Binary Search Tree'e doğru sıralı şekilde eklendi. Her düğümün sağında kendinden büyük elemanlar, solunda ise kendinden küçük elemanlar bulunmaktadır.
